@@ -1,0 +1,209 @@
+nav .navbar-button {
+    text-decoration: none;
+    background-color: blue;
+    color: white;
+    padding: 12px 40px;
+    border-radius: 30px;
+}
+nav .navbar-button:hover{
+    background-color: white;
+    color: blue;
+    border:solid 1px #167ce9 ;
+}
+.navbar{
+    padding:20px ;
+}
+nav ul li {
+    margin-right: 20px;
+
+}
+
+nav ul li a {
+    color: blue;
+}
+header {
+    min-height: 100vh;
+    background: linear-gradient(rgb(0, 0, 0, 0.7), rgb(0, 0, 0, 0.7)), url(../images/department/header.webp);
+    background-position: center;
+    background-size: cover;
+    padding-top: 200px;
+    color: white;
+    text-align: center;
+    background-attachment: fixed;
+}
+
+.textheader {
+    margin-top: -15px;
+}
+
+#left li a {
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    text-indent: 50;
+}
+
+#left {
+    background-color: #167CE9;
+    text-transform: capitalize;
+    margin-top: -70px;
+    text-indent: 10px;
+    line-height: 50px;
+    border-radius: 10px;
+
+}
+.tab-content p{
+    opacity: 0.85;
+}
+.section-1 .card{
+    background:linear-gradient(rgba(99, 99, 99),rgba(99, 99, 99));
+}
+
+.section-2 {
+
+    background-image: url(../images/department/servise.webp);
+    background-position: center;
+    background-size: cover;
+    padding-top: 3px;
+}
+
+.services h4 {
+    color: #187CEC;
+
+}
+
+.ourdoctors {
+    margin-top: 4.5%;
+
+}
+
+.ourdoctors .card {
+    width: 260px;
+    height: 430px;
+    background-position: center;
+    background-size: cover;
+    border: none;
+    margin-left: 25px;
+}
+
+.ourdoctors .card .docinfo {
+    background-color: white;
+    margin-top: 349px;
+    width: 260px;
+    margin-left: -12px;
+    text-align: center;
+    opacity: 0.93;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.rate h4,
+p {
+    text-align: center;
+
+}
+
+.ratetext {
+
+    opacity: 0.85;
+    padding-left: 170px;
+
+}
+
+.rate {
+    background: linear-gradient(rgb(0, 0, 0, 0.500), rgb(0, 0, 0, 0.500)), url(../images/department/xbg_4.jpg.pagespeed.ic.jFH2Xm_la7.webp);
+    backdrop-filter: 100px;
+
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+    overflow: hidden;
+    margin: 0;
+    color: white;
+    text-align: center;
+    padding-top: 100px;
+    padding-left:150px ;
+
+}
+
+.rate {
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", sans-serif;
+
+}
+
+
+
+.nums {
+
+
+    display: flex;
+}
+
+.nums .num {
+    flex: 1;
+    text-align: center;
+    font-size: 50px;
+    padding: 20px;
+    margin-left: 200px;
+    margin-top: 80px;
+}
+
+
+.persons {
+    margin-left: 400px;
+    padding-bottom: 50px;
+}
+
+.author {
+    width: 250px;
+
+}
+
+.recentblog {
+    background-color: #F8FAFF;
+    padding-top: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.subcribe {
+    background: linear-gradient(rgb(108, 224, 186), rgb(45, 151, 221));
+    
+}
+
+
+
+.subscribe-form .form-group input {
+    background: transparent !important;
+}
+.subscribe-form{
+    width: 600px;
+}
+
+    
+
+footer{
+    height: 500px;
+    background-color: #413B5F;
+    color: #fff;
+    display:flex;
+    align-items: center;
+    text-align: center;
+}
+
+
+

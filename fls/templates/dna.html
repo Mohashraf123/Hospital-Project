@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DNA&&RNA</title>
+    <style>
+        body{
+            background-color: #F8FAFF;
+            padding:0;
+            margin:0;
+        }
+        header {
+            width:100%;
+            min-height:50vh;
+            background: linear-gradient(rgba(114, 191, 222,0.7), rgba(114, 191, 222,0.7)),  url('../images/Genatic.jpg');
+            background-position: center;
+            background-size: cover;
+            background-attachment: fixed;
+            text-align: center;
+            padding-top:100px;
+        }
+        
+        header div h2{
+            font-size:70px ;
+            color:white ;
+            margin-left:100px ;
+        }
+        
+        .ops{
+            padding:80px ;
+            width: 73%;
+            height:auto ;
+            border:solid 1px black;
+            margin-left:10%;
+            margin-top:5%;
+            border-radius:15px;
+        }
+        .ops .inputs{
+            display: flex;
+        }
+        .input1{
+            width:800px ;
+        
+        }
+        .input1 textarea{
+            margin-top:20px ;
+            width:500px ;
+            height:300px ;
+            font-size:20px;
+        }
+        .info{
+            text-align:center;
+            width:80%;
+            border:solid 1px black;
+            margin-left:10%;
+            margin-top:5%;
+            padding:20px;
+            border-radius:15px;
+        }
+        .info p{
+            text-align:left;
+            font-size:25px;
+        }
+        
+        
+        /* footer */
+        footer{
+            margin-top:5%;
+            background: linear-gradient(rgba(66, 61, 97,0.9), rgba(66, 61, 97,0.9)), url(../images/department/bg_5.jpg);
+            background-position: center;
+            background-size: cover;
+            width:100% ;
+            height:100px;
+            color:white ;
+            text-align:center;
+            padding-top:20px;
+        }
+        
+    </style>
+
+</head>
+<body>
+   <!--- <form name="passdata" action="." method="post">
+        <label >Name:</label>
+        <input type="file" id="upload">         
+        <input type="text" name="seq" id="output">
+        <input type="submit" value="submit">
+    </form> -->
+
+    <Header>
+        <div>
+            <h2>DNA&&RNA</h2>
+        </div>
+    </Header><!-- header -->
+
+    <section class="info">
+        <h2>What is DNA ?</h2>
+        <p>DNA, or deoxyribonucleic acid, is the hereditary material in humans and almost all other organisms. Nearly every cell in a person’s body has the same DNA. Most DNA is located in the cell nucleus (where it is called nuclear DNA), but a small amount of DNA can also be found in the mitochondria (where it is called mitochondrial DNA or mtDNA). Mitochondria are structures within cells that convert the energy from food into a form that cells can use.</p> 
+        
+        <p>The information in DNA is stored as a code made up of four chemical bases: adenine (A), guanine (G), cytosine (C), and thymine (T). Human DNA consists of about 3 billion bases, and more than 99 percent of those bases are the same in all people. The order, or sequence, of these bases determines the information available for building and maintaining an organism, similar to the way in which letters of the alphabet appear in a certain order to form words and sentences.</p>
+
+        <p>DNA bases pair up with each other, A with T and C with G, to form units called base pairs. Each base is also attached to a sugar molecule and a phosphate molecule. Together, a base, sugar, and phosphate are called a nucleotide. Nucleotides are arranged in two long strands that form a spiral called a double helix. The structure of the double helix is somewhat like a ladder, with the base pairs forming the ladder’s rungs and the sugar and phosphate molecules forming the vertical sidepieces of the ladder.
+
+            An important property of DNA is that it can replicate, or make copies of itself. Each strand of DNA in the double helix can serve as a pattern for duplicating the sequence of bases. This is critical when cells divide because each new cell needs to have an exact copy of the DNA present in the old cell.</p>
+
+    </section>
+
+    <section class="info">
+        <h2>What is RNA ?</h2>
+        <p>Ribonucleic acid (abbreviated RNA) is a nucleic acid present in all living cells that has structural similarities to DNA. Unlike DNA, however, RNA is most often single-stranded. An RNA molecule has a backbone made of alternating phosphate groups and the sugar ribose, rather than the deoxyribose found in DNA. Attached to each sugar is one of four bases: adenine (A), uracil (U), cytosine (C) or guanine (G). Different types of RNA exist in cells: messenger RNA (mRNA), ribosomal RNA (rRNA) and transfer RNA (tRNA). In addition, some RNAs are involved in regulating gene expression. Certain viruses use RNA as their genomic material.</p> 
+        
+        <p>Ribonucleic acid, or RNA. I often think of RNA as being the less well-known cousin of DNA, particularly for people outside the field of biology or genomics. But really, when you think about it, RNA, in so many ways, is the actual functional form of nucleic acids that really the body uses to do the business of, you know, constructing cells or responding to immune challenges, of carrying amino acids from one part of the cell to the other, that quite often I feel that RNA doesn't get the respect it deserves. So what I think we can share is that the different forms of RNA -- mRNA, tRNA, rRNA -- each in their own way have absolutely fundamental functions without which the biology of the genome could not be translated into practice. And I guess the most obvious one here might be mRNAs, because these are the transcribed forms of genes, the form in which a gene gets read by the cell. But really, I would encourage everyone to learn about the unique roles that tRNAs and rRNAs have as well, because each of these fits into the puzzle of life in a wonderfully unique way.</p>
+    </section>
+
+    <section class="info">
+        <h2>What is Protien ?</h2>
+        <p>Proteins are large, complex molecules that play many important roles in the body. They are critical to most of the work done by cells and are required for the structure, function and regulation of the body’s tissues and organs. A protein is made up of one or more long, folded chains of amino acids (each called a polypeptide), whose sequences are determined by the DNA sequence of the protein-encoding gene.</p> 
+        
+        <p>Protein. Most familiar are proteins that make up structures, such as muscle and, very importantly, proteins that fold and form what are known as enzymes. These proteins help your body carry out all of the chemical reactions it needs to keep you alive.</p>
+    </section>
+
+
+
+
+    <section class="ops">
+        <form action="/dna" method="post">
+            <div class="inputs">
+                <div class="input1">
+                    <label for="upload">Enter DNA:</label>
+                    <input type="file" id="upload" >
+                    <br>
+                    <textarea id="output" name="seq" id="input"></textarea>
+                     <br>
+                </div><!-- input1 -->
+            </div>
+            <input type="submit" value="START">
+        </form>
+
+        <script src=""></script>
+
+    </section><!-- ops -->
+
+    <footer>
+            <div>
+                <p>Copyright ©2022 All rights reserved</p>
+            </div>
+    </footer>
+
+    <script src={{url_for('static',filename='js/dna.js')}}></script
+    
+</body>
+</html>

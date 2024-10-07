@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>reverse</title>
+    <style>
+        body{
+            background-color: #F8FAFF;
+            padding:0;
+            margin:0;
+        }
+        header {
+            width:100%;
+            min-height:50vh;
+            background: linear-gradient(rgba(114, 191, 222,0.7), rgba(114, 191, 222,0.7)),  url('../images/Genatic.jpg');
+            background-position: center;
+            background-size: cover;
+            background-attachment: fixed;
+            text-align: center;
+            padding-top:100px;
+        }
+        
+        header div h2{
+            font-size:70px ;
+            color:white ;
+            margin-left:100px ;
+        }
+        
+        .ops{
+            padding:100px ;
+            width: 100%;
+            height:auto ;
+        }
+        .ops .inputs{
+            display: flex;
+        }
+        .input1{
+            width:800px ;
+            font-size:50px;
+        
+        }
+        .input1 textarea{
+            margin-top:20px ;
+            width:500px ;
+            height:300px ;
+            font-size:20px;
+        }
+        .inp{
+            display:flex;
+        }
+        .info{
+            text-align:center;
+            width:80%;
+            border:solid 1px black;
+            margin-left:10%;
+            margin-top:5%;
+            padding:20px;
+            border-radius:15px;
+        }
+        .info p{
+            text-align:left;
+            font-size:25px;
+        }
+        .start{
+            width:300px;
+            height:50px;
+            border-radius:50px;
+            margin-top:20px
+        }
+
+        
+        /* footer */
+        footer{
+            margin-top:5%;
+            background: linear-gradient(rgba(66, 61, 97,0.9), rgba(66, 61, 97,0.9)), url(../images/department/bg_5.jpg);
+            background-position: center;
+            background-size: cover;
+            width:100% ;
+            height:100px;
+            color:white ;
+            text-align:center;
+            padding-top:20px;
+        }
+        
+        
+    </style>
+
+</head>
+<body>
+  
+    <Header>
+        <div>
+            <h2>Sequencing By synthesis</h2>
+        </div>
+    </Header><!-- header -->
+    <section class="info">
+        <p>Sequencing by synthesis takes advantage of the fact that DNA strands, which are normally in double-helix form, split apart for mitosis and each strand is copied. Sanger figured out a clever way of converting the sequencing problem into a problem of measuring mass.
+
+            We mentioned above that DNA polymerase naturally uses dNTPs to synthesize a new strand. The synthesis process occurs very quickly, making it hard to make any sort of measurement during synthesis. Sanger overcame this problem by figuring out a way to terminate synthesis using a modified version of dNTPs called ddNTPs (dideoxynucleotide triphosphates). DNA polymerase can attach a ddNTP to the sequence just like with dNTPs, but it cannot attach anything to the ddNTP. In other words, the attachment of a ddNTP halts the replication of the DNA molecule.
+            
+            We will denote ddNTPs corresponding to A, C, G, and T as A*, C*, G*, and T*. By introducing a small amount of one type of ddNTP into the experiment (e.g. T*), when the reactions finish, we are left with: 1. small percentages of strands containing T*s at locations corresponding to A’s in the template, and 2. a large fraction of strands containing only normal dNTPs. This procedure is known as the chain termination method. We now describe Sanger’s sequencing procedure created in 1977:</p>
+    
+
+    </section>
+    
+
+    <section class="ops">
+        <form action="/reve" method="post">
+            <div class="inp">
+                <div class="inputs">
+                    <div class="input1">
+                        <label for="upload">Enter DNA:</label>
+                        <input type="file" id="upload" name="file" >
+                    </div><!-- input1 -->
+                </div>
+            </div>
+            
+            <input type="submit" value="START" class="start">
+
+        </form>
+
+        <script src=""></script>
+
+    </section><!-- ops -->
+
+    <footer>
+            <div>
+                <p>Copyright ©2022 All rights reserved</p>
+            </div>
+    </footer>
+
+    <script src={{url_for('static',filename='js/diseas.js')}}>
+
+    </script>
+    
+</body>
+</html>

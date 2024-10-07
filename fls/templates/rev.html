@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>rev</title>
+    <style>
+        body {
+            background-color:#F8FAFF;
+                
+           }
+           
+           body #result{
+               display: flex;
+               width:100% ;
+               height:100px ;
+               border:solid 2px black ;
+               padding-top:50px ;
+               
+           }
+           
+           body .product1{
+               background-color: red;
+               text-align: center;
+               margin-left:10px ;
+               width: 50px;
+               height: 50px;
+               
+           }
+           body .product2{
+               background-color: yellow;
+               text-align: center;
+               margin-left:10px ;
+               width: 50px;
+               height: 50px;
+           
+           }
+           body .product3{
+               background-color: blue;
+               text-align: center;
+               margin-left:10px ;
+               width: 50px;
+               height: 50px;
+           
+           }
+           body .product4{
+               background-color: green;
+               text-align: center;
+               margin-left:10px ;
+               width: 50px;
+               height: 50px;
+               border:solid 1px black ;
+           
+           }
+           .note{
+               width: 200px;
+               height:60px ;
+               display: flex;
+               align-items: center;
+               font-size:30px ;
+               border:solid 1px black ;
+               padding-left:20px ;
+           
+           }
+           .note .A{
+               width:20px ;
+               height:20px ;
+               background-color: red;
+           }
+           .note .T{
+               width:20px ;
+               height:20px ;
+               background-color: yellow;
+           }
+           .note .C{
+               width:20px ;
+               height:20px ;
+               background-color: blue;
+           }
+           .note .G{
+               width:20px ;
+               height:20px ;
+               background-color:green;
+           }
+           .res{
+               font-size: 30px;
+               width:100% ;
+               height:50px ;
+               border: solid 2px black;
+           }
+           .comp{
+               font-size: 30px;
+               width:100% ;
+               height:50px ;
+               border: solid 2px black;
+           }
+    </style>
+</head>
+<body>
+    <h2>The Result:</h2>
+ <section id="result">
+    
+ </section>
+
+ <h2>Note:</h2>
+ <section class="note">  
+  <p>A</p> 
+  <div class="A"></div>
+  <p>T</p> 
+  <div class="T"></div>
+  <p>C</p> 
+  <div class="C"></div>
+  <p>G</p> 
+  <div class="G"></div>
+
+
+ </section><!-- note -->
+ <h2>So that the sequence:</h2>
+ <textarea name="" id="res" cols="200" rows="10" class="res">{{R}}</textarea>
+ <br>
+ <h2>So that the Code Strand:</h2>
+ <textarea name="" id="" cols="200" rows="10" class="comp">{{C}}</textarea>
+ 
+    <script src={{url_for('static',filename='js/rev.js')}}></script>
+
+</body>
+</html>

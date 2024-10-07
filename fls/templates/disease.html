@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Disease Detection</title>
+    <style>
+        body{
+            background-color: #F8FAFF;
+            padding:0;
+            margin:0;
+        }
+        header {
+            width:100%;
+            min-height:50vh;
+            background: linear-gradient(rgba(114, 191, 222,0.7), rgba(114, 191, 222,0.7)),  url('../images/Genatic.jpg');
+            background-position: center;
+            background-size: cover;
+            background-attachment: fixed;
+            text-align: center;
+            padding-top:100px;
+        }
+
+        header div h2{
+            font-size:70px ;
+            color:white ;
+            margin-left:100px ;
+        }
+        
+        .ops{
+            padding:80px ;
+            width: 73%;
+            height:auto ;
+            border:solid 1px black;
+            margin-left:10%;
+            margin-top:5%;
+            border-radius:15px;
+        }
+        .ops .inputs{
+            display: flex;
+        }
+        .input1{
+            width:600px ;
+        }
+        .input1 textarea{
+            margin-top:20px ;
+            width:500px ;
+            height:300px ;
+            font-size:20px;
+            margin-right:50px;
+        }
+        .inp{
+            display:flex;
+        }
+
+        .info{
+            text-align:center;
+            width:80%;
+            border:solid 1px black;
+            margin-left:10%;
+            margin-top:5%;
+            padding:20px;
+            border-radius:15px;
+        }
+        .info p{
+            text-align:left;
+            font-size:25px;
+        }
+        
+        
+        /* footer */
+        footer{
+            margin-top:5%;
+            background: linear-gradient(rgba(66, 61, 97,0.9), rgba(66, 61, 97,0.9)), url(../images/department/bg_5.jpg);
+            background-position: center;
+            background-size: cover;
+            width:100% ;
+            height:100px;
+            color:white ;
+            text-align:center;
+            padding-top:20px;
+        }
+        
+    </style>
+
+</head>
+<body>
+   <!--- <form name="passdata" action="." method="post">
+        <label >Name:</label>
+        <input type="file" id="upload">         
+        <input type="text" name="seq" id="output">
+        <input type="submit" value="submit">
+    </form> -->
+
+    <Header>
+        <div>
+            <h2>Disease Detection</h2>
+        </div>
+    </Header><!-- header -->
+
+    <section class="info">
+        <h2>Mutations</h2>
+        <p>A mutation is a change in the DNA sequence of an organism. Mutations can result from errors in DNA replication during cell division, exposure to mutagens or a viral infection. Germline mutations (that occur in eggs and sperm) can be passed on to offspring, while somatic mutations (that occur in body cells) are not passed on.</p> 
+        
+        <p>TMutation. Mutations are happening in our cells all the time, but almost none of these affect our health. This is very different than what we often see in science fiction in movies. In real life, a mutation is never so beneficial that it turns a person into a superhero or does something bizarre like cause them to grow wings. There are many reasons that mutations usually don't have major consequences. One reason is that our cells have very sophisticated machinery for repairing mutations very quickly. So there's not enough time for them to cause problems. Another is that most mutations occur in somatic cells like muscle cells or skin cells and can only affect the cell where the mutation occurred and cells that grow from that cell. On the other hand, when mutations occur in germline cells, eggs and sperm, they will be present in every cell that develops from that egg or sperm, an entire person, and can have larger effects.</p>
+
+    </section>
+
+
+    <section class="ops">
+        <form action="/dise" method="post">
+            <div class="inp">
+                <div class="inputs">
+                    <div class="input1">
+                        <label for="upload">Enter DNA:</label>
+                        <input type="file" id="upload" >
+                        <br>
+                        <textarea id="output" name="paseq" id="input"></textarea>
+                         <br>
+                    </div><!-- input1 -->
+                </div>
+    
+                <div class="inputs">
+                    <div class="input1">
+                        <label for="upload">Enter Disease sequence:</label>
+                        <input type="file" id="upload2" >
+                        <br>
+                        <textarea id="output2" name="disseq" id="input"></textarea>
+                         <br>
+                    </div><!-- input1 -->
+                </div>
+            </div>
+            
+            <input type="submit" value="START">
+
+        </form>
+
+        <script src=""></script>
+
+    </section><!-- ops -->
+
+    <footer>
+            <div>
+                <p>Copyright ©2022 All rights reserved</p>
+            </div>
+    </footer>
+
+    <script src={{url_for('static',filename='js/diseas.js')}}></script>
+    
+</body>
+</html>
